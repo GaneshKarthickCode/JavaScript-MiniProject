@@ -1,0 +1,566 @@
+<html>
+<head>
+<title>JS-Function2</title>
+
+<link rel="stylesheet" type="text/css" href="Styles/main.css"/>
+</head>
+<body>
+ <img alt="" src="images/HeaderBanner.jpg" width="100%" />
+   <br />
+
+    <br />
+
+    <table style="width: 100%; border-style: none;">
+        <tr  style="width: 100%;border-style: none;">
+            <td style="width: 10%; text-align:center;border-style: none;">
+                
+            </td>
+            <td style="width: 20%;border-style: none;">
+                
+               <button type="submit" onclick="document.location='JSFunctioneg.html'" class="button1" onclick=""><b> Page1 </b></button>
+            </td>
+            <td style="width: 10%; text-align:center;border-style: none;">
+                
+            </td>
+            <td style="width: 20%;border-style: none;">
+                <button class="button1" onclick="document.location='JSFunction1.html'"><b> Page2 </b></button>
+            </td>
+            <td style="width: 10%; text-align:center;border-style: none;">
+                
+            </td>
+            <td style="width: 20%;border-style: none;">
+                <button class="button1" onclick="document.location='JSFunction2.html'"><b> Page3 </b></button>
+            </td>
+
+            <td style="width: 10%;border-style: none;">
+               
+            </td>
+        </tr>
+        
+    </table>
+		<script type="text/javascript">
+
+		    function calculateMarks() {
+
+		        var dmtmark = document.getElementById("DMTMark").value;
+                var obetmark = document.getElementById("OBETMark").value;
+		        var dlctmark = document.getElementById("DLCTMark").value;
+		        var catmark = document.getElementById("CATMark").value;
+		        var dsatmark = document.getElementById("DSATMark").value;
+		        var javatmark = document.getElementById("JAVATMark").value;
+                
+		        var dmpmark = document.getElementById("DMPMark").value;
+		        var obepmark = document.getElementById("OBEPMark").value;
+		        var dlcpmark = document.getElementById("DLCPMark").value;
+		        var capmark = document.getElementById("CAPMark").value;
+		        var dsapmark = document.getElementById("DSAPMark").value;
+		        var javapmark = document.getElementById("JAVAPMark").value;
+
+		        var dmtotalmark = document.getElementById("DMTotalMark").value;
+		        var obetotalmark = document.getElementById("OBETotalMark").value;
+		        var dlctotalmark = document.getElementById("DLCTotalMark").value;
+		        var captotalmark = document.getElementById("CATotalMark").value;
+		        var dsatotalmark = document.getElementById("DSATotalMark").value;
+		        var javatotalmark = document.getElementById("JAVATotalMark").value;
+
+		        var totalmark = document.getElementById("TotalMark").value;
+		        var avgmark = document.getElementById("AVGMark").value;
+
+		      
+		        
+
+		        if (isNaN(dmtmark)) {
+		            dmtmark = 0;
+		        }
+
+		        if (isNaN(obetmark)) {
+		            obetmark = 0;
+		        }
+
+		        if (isNaN(dlctmark)) {
+		            dlctmark = 0;
+		        }
+
+		        if (isNaN(catmark)) {
+		            catmark = 0;
+		        }
+
+		        if (isNaN(dsatmark)) {
+		            dsatmark = 0;
+		        }
+
+		        if (isNaN(javatmark)) {
+		            javatmark = 0;
+		        }
+
+
+
+		        if (isNaN(dmpmark)) {
+		            dmpmark = 0;
+		        }
+
+		        if (isNaN(obepmark)) {
+		            obepmark = 0;
+		        }
+
+		        if (isNaN(dlcpmark)) {
+		            dlcpmark = 0;
+		        }
+
+		        if (isNaN(capmark)) {
+		            capmark = 0;
+		        }
+
+		        if (isNaN(dsapmark)) {
+		            dsapmark = 0;
+		        }
+
+		        if (isNaN(javapmark)) {
+		            javapmark = 0;
+		        }
+
+
+
+		        if (isNaN(dmtotalmark)) {
+		            dmtotalmark = 0;
+		        }
+
+		        if (isNaN(obetotalmark)) {
+		            obetotalmark = 0;
+		        }
+
+		        if (isNaN(dlctotalmark)) {
+		            dlctotalmark = 0;
+		        }
+
+		        if (isNaN(captotalmark)) {
+		            captotalmark = 0;
+		        }
+
+		        if (isNaN(dsatotalmark)) {
+		            dsatotalmark = 0;
+		        }
+
+		        if (isNaN(javatotalmark)) {
+		            javatotalmark = 0;
+		        }
+
+
+
+		        if (isNaN(totalmark)) {
+		            totalmark = 0;
+		        }
+
+
+		        if (isNaN(avgmark)) {
+		            avgmark = 0;
+		        }
+
+
+		        dmtotalmark = Number(dmtmark) + Number(dmpmark);
+
+		        obetotalmark = Number(obetmark) + Number(obepmark);
+
+		        dlctotalmark = Number(dlctmark) + Number(dlcpmark);
+
+		        captotalmark = Number(catmark) + Number(capmark);
+
+		        dsatotalmark = Number(dsatmark) + Number(dsapmark);
+
+		        javatotalmark = Number(javatmark) + Number(javapmark);
+
+		        totalmark = Number(dmtotalmark) + Number(obetotalmark) + Number(dlctotalmark) + Number(captotalmark) + Number(dsatotalmark) + Number(javatotalmark);
+
+		        avgmark = Number(totalmark) / 6;
+		        avgmark = avgmark.toFixed(2);
+
+		        document.getElementById("DMTotalMark").value = dmtotalmark.toString();
+
+		        document.getElementById("OBETotalMark").value = obetotalmark.toString();
+
+		        document.getElementById("DLCTotalMark").value = dlctotalmark.toString();
+
+		        document.getElementById("CATotalMark").value = captotalmark.toString();
+
+		        document.getElementById("DSATotalMark").value = dsatotalmark.toString();
+
+		        document.getElementById("JAVATotalMark").value = javatotalmark.toString();
+
+		        document.getElementById("TotalMark").value = totalmark.toString();
+
+		        document.getElementById("AVGMark").value = avgmark.toString();
+
+
+
+		        //alert(avgmark);
+
+
+		    }
+
+
+		    function clearMarks() {
+
+		        var dmtmark = document.getElementById("DMTMark").value;
+		        var obetmark = document.getElementById("OBETMark").value;
+		        var dlctmark = document.getElementById("DLCTMark").value;
+		        var catmark = document.getElementById("CATMark").value;
+		        var dsatmark = document.getElementById("DSATMark").value;
+		        var javatmark = document.getElementById("JAVATMark").value;
+
+		        var dmpmark = document.getElementById("DMPMark").value;
+		        var obepmark = document.getElementById("OBEPMark").value;
+		        var dlcpmark = document.getElementById("DLCPMark").value;
+		        var capmark = document.getElementById("CAPMark").value;
+		        var dsapmark = document.getElementById("DSAPMark").value;
+		        var javapmark = document.getElementById("JAVAPMark").value;
+
+		        var dmtotalmark = document.getElementById("DMTotalMark").value;
+		        var obetotalmark = document.getElementById("OBETotalMark").value;
+		        var dlctotalmark = document.getElementById("DLCTotalMark").value;
+		        var captotalmark = document.getElementById("CATotalMark").value;
+		        var dsatotalmark = document.getElementById("DSATotalMark").value;
+		        var javatotalmark = document.getElementById("JAVATotalMark").value;
+
+		        var totalmark = document.getElementById("TotalMark").value;
+		        var avgmark = document.getElementById("AVGMark").value;
+
+
+
+
+		        if (isNaN(dmtmark)) {
+		            dmtmark = 0;
+		        }
+
+		        if (isNaN(obetmark)) {
+		            obetmark = 0;
+		        }
+
+		        if (isNaN(dlctmark)) {
+		            dlctmark = 0;
+		        }
+
+		        if (isNaN(catmark)) {
+		            catmark = 0;
+		        }
+
+		        if (isNaN(dsatmark)) {
+		            dsatmark = 0;
+		        }
+
+		        if (isNaN(javatmark)) {
+		            javatmark = 0;
+		        }
+
+
+
+		        if (isNaN(dmpmark)) {
+		            dmpmark = 0;
+		        }
+
+		        if (isNaN(obepmark)) {
+		            obepmark = 0;
+		        }
+
+		        if (isNaN(dlcpmark)) {
+		            dlcpmark = 0;
+		        }
+
+		        if (isNaN(capmark)) {
+		            capmark = 0;
+		        }
+
+		        if (isNaN(dsapmark)) {
+		            dsapmark = 0;
+		        }
+
+		        if (isNaN(javapmark)) {
+		            javapmark = 0;
+		        }
+
+
+
+		        if (isNaN(dmtotalmark)) {
+		            dmtotalmark = 0;
+		        }
+
+		        if (isNaN(obetotalmark)) {
+		            obetotalmark = 0;
+		        }
+
+		        if (isNaN(dlctotalmark)) {
+		            dlctotalmark = 0;
+		        }
+
+		        if (isNaN(captotalmark)) {
+		            captotalmark = 0;
+		        }
+
+		        if (isNaN(dsatotalmark)) {
+		            dsatotalmark = 0;
+		        }
+
+		        if (isNaN(javatotalmark)) {
+		            javatotalmark = 0;
+		        }
+
+
+
+		        if (isNaN(totalmark)) {
+		            totalmark = 0;
+		        }
+
+
+		        if (isNaN(avgmark)) {
+		            avgmark = 0;
+		        }
+
+
+
+
+
+		        dmtmark = 0;
+                obetmark = 0;
+		         dlctmark = 0;
+		         catmark = 0;
+		         dsatmark = 0;
+		         javatmark = 0;
+
+		         dmpmark = 0;
+		         obepmark = 0;
+		         dlcpmark =0;
+		         capmark = 0;
+		         dsapmark = 0;
+		         javapmark = 0;
+
+		         dmtotalmark = 0;
+		         obetotalmark = 0;
+		         dlctotalmark = 0;
+		         captotalmark = 0;
+		         dsatotalmark = 0;
+		         javatotalmark =0;
+
+		         totalmark = 0;
+		         avgmark = 0;
+
+
+
+		        
+
+		         document.getElementById("DMTMark").value = dmtmark.toString();
+
+		         document.getElementById("OBETMark").value = obetmark.toString();
+
+		         document.getElementById("DLCTMark").value = dlctmark.toString();
+
+		         document.getElementById("CATMark").value = catmark.toString();
+
+		         document.getElementById("DSATMark").value = dsatmark.toString();
+
+		         document.getElementById("JAVATMark").value = javatmark.toString();
+
+
+
+		         document.getElementById("DMPMark").value = dmpmark.toString();
+
+		         document.getElementById("OBEPMark").value = obepmark.toString();
+
+		         document.getElementById("DLCPMark").value = dlcpmark.toString();
+
+		         document.getElementById("CAPMark").value = capmark.toString();
+
+		         document.getElementById("DSAPMark").value = dsapmark.toString();
+
+		         document.getElementById("JAVAPMark").value = javapmark.toString();
+
+
+		         
+
+
+
+		        document.getElementById("DMTotalMark").value = dmtotalmark.toString();
+
+		        document.getElementById("OBETotalMark").value = obetotalmark.toString();
+
+		        document.getElementById("DLCTotalMark").value = dlctotalmark.toString();
+
+		        document.getElementById("CATotalMark").value = captotalmark.toString();
+
+		        document.getElementById("DSATotalMark").value = dsatotalmark.toString();
+
+		        document.getElementById("JAVATotalMark").value = javatotalmark.toString();
+
+		        document.getElementById("TotalMark").value = totalmark.toString();
+
+		        document.getElementById("AVGMark").value = avgmark.toString();
+
+
+
+		    }
+	
+        </script>
+
+
+
+
+<table  width = "60%">
+
+<tr>
+    <th>NAME:</th>
+    <th>GANESH KARTHICK</th>
+</tr>
+<tr>
+    <th>ROLL NO:</th>
+    <th>1905024</th>
+</tr>
+<tr>
+    <th>COLLEGE :</th>
+    <th>SRI RAMAKRISHNA ENGINEERING COLLEGE</th>
+</tr>
+<tr>
+    <th>SEMESTER</th>
+    <th>4th</th>
+</tr>
+
+    
+</table>
+
+
+
+<table  style="width:100%">
+	
+
+<thead class="table100-head" style="color:White;">
+        <td style="width:20%;text-align:center;"><b> SUBJECT </b></td>   
+        <td style="width:10%;text-align:center;"><b>MAX MARKS</b></td> 
+        <td style="width:10%;text-align:center;"><b>THEORY</b></td> 
+        <td style="width:10%;text-align:center;"><b>MARKS AWARDED</b></td>
+        <td style="width:10%;text-align:center;"><b>PRACTICAL</b></td>
+        <td style="width:10%;text-align:center;"><b>MARKS AWARDED</b></td>
+        <td style="width:10%;text-align:center;"><b>TOTAL MARKS</b></td> 
+        <td style="width:10%;text-align:center;"><b></b></td> 
+        <td style="width:10%;text-align:center;"><b></b></td> 
+    </thead>
+
+
+<tr>
+
+     
+    <td style="width:20%;text-align:center ;font-size:20px"><b> Discrete Maths</b> </td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>100</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>75</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="DMTMark"   " value="0"/></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>25</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="DMPMark"   " value="0"/></b></td>    
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="DMTotalMark"   " value="0" disabled="disabled" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+
+    
+
+  
+
+</tr>
+
+
+<tr>
+    <td style="width:20%;text-align:center;font-size:20px"><b> OBE </b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>100</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>75</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="OBETMark"   value="0" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>25</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="OBEPMark"   value="0" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="OBETotalMark"   value="0" disabled="disabled"/></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+</tr>
+
+
+<tr>
+    
+    <td style="width:20%;text-align:center;font-size:20px"><b> DLC </b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>100</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>75</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="DLCTMark"   value="0" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>25</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="DLCPMark"   value="0"/></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="DLCTotalMark"   value="0" disabled="disabled"  /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+</tr>
+
+
+<tr>
+    <td style="width:20%;text-align:center;font-size:20px"><b> CA </b> </td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>100</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>75</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="CATMark"   value="0" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>25</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="CAPMark"   value="0"/></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="CATotalMark"   value="0" disabled="disabled"/></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+</tr>
+
+
+<tr>
+    <td style="width:20%;text-align:center;font-size:20px"><b> DSA </b> </td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>100</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>75</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="DSATMark"   value="0" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>25</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="DSAPMark"   value="0" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="DSATotalMark"   value="0" disabled="disabled" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+</tr>
+
+<tr>
+   <td style="width:20%;text-align:center;font-size:20px"><b> JAVA </b> </td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>100</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>75</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="JAVATMark"   value="0" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b>25</b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="JAVAPMark"   value="0" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b><input class="textboxStyle" type="text" id="JAVATotalMark"   value="0" disabled="disabled" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>  
+</tr>
+
+
+<tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th> TOTAL   </th>
+    <td style="width:10%;text-align:center;font-size:20px"><b><input class="textboxStyle" type="text" id="TotalMark"   value="0" disabled="disabled" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><b></b></td>
+</tr>
+
+
+<tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>AVG </th>
+    <td style="width:10%;text-align:center;font-size:20px"><b><input class="textboxStyle" type="text" id="AVGMark" value="0" disabled="disabled" /></b></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><button class="buttonGreen" onclick="calculateMarks()"><b> OK </b></button></td>
+    <td style="width:10%;text-align:center ;font-size:20px"><button class="buttonRed" onclick="clearMarks()"><b> CLEAR </b></button></td>
+</tr>
+</table>
+
+
+
+<br></br>
+<div id="footer">2021 Powered By:
+    S. Ganesh Karthick | K.P.Aswin Kumar | 2nd Year B.Tech(IT), SREC, Coimbatore | Contact: +91 7373332510
+  </div>
+
+
+
+</body>
+</html>
